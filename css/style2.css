@@ -1,0 +1,240 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav, footer, header, aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-ckear{display: none;}
+button{corsor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
+body{
+   background: url(../img/фон1.jpg)  repeat;
+	background-size: 1200px;
+}
+
+
+header{
+	padding: 0px 40px 0px 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+	background-color: #F77F00;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+
+}
+header span {
+	font-size: 25px;
+}
+
+footer{
+	background-color: #F77F00;
+	height: 60px;
+	position:  fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.c{
+	font-family: 'Comic Neue', cursive;
+
+}
+/*
+nav{
+	display: flex;
+	justify-content: center;
+	background-color: #F77F00;
+	margin: 0 auto;
+
+}
+nav div{
+	text-align: center;
+	font-size: 30px;
+	height: 40px;
+	border: 3px solid #FCBF49;
+	width: 30%;
+	background-color: #F77F00;
+}
+*/
+.menu {
+	color: white;
+}
+.menu1{
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	border-radius: 15px;
+	padding: 0px 15px;
+	background-color: #003049;
+	margin: 0px 0px 0px 10px;
+	box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.menu1:hover, button:hover{
+	background-color: #FCBF49;
+}
+/*симуляція активної кнопки (коли натискаємо на кнопку вона візуально прожимається)*/
+.menu1:active, button:active{
+	position: relative;
+	top:  3px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+	color: white;
+}
+.logo1{
+	font-size: 30px;
+	height: 40px;
+	line-height: 40px;
+	display:  inline-block;
+	border-radius: 20px;
+	padding: 0px 30px;
+	background-color: #D62828;
+	margin: 0px 10px 0px 0px;
+	box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.logo1:hover{
+	background-color: #FCBF49;
+}
+/*симуляція активної кнопки (коли натискаємо на кнопку вона візуально прожимається)*/
+.logo1:active{
+	position: relative;
+	top: 3px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer img{
+	border-radius: 50%;
+	margin: 10px 20px;
+	height: 40px;
+	box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+footer div{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+footer img:active{
+	position: relative;
+	top: 3px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+footer span{
+	display: inline-block;
+	margin: 20px 0px;
+	padding: 0px 20px;
+	font-family: 'Comic Neue', cursive;
+	font-size: 20px;
+	color: white;
+}
+
+.main{
+	margin: 0 auto;
+	height: 100%;
+	width: 90%;
+	background-color: #EAE2B7;
+	color: rgb(66, 64, 64);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: justify;
+
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+
+form, form input, form select{
+	font-family: 'Comic Neue', cursive;
+	font-size: 20px;
+}
+
+form{
+	border: 3px solid black;
+	border-radius: 10px;
+	width: 40%;
+
+	margin: 0 auto;
+}
+
+form div{
+	padding: 10px 0px;
+	
+}
+
+.forms{
+	width: 80%;
+	margin: 0 auto;
+}
+
+form img{
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+	
+}
+
+button{
+	background-color: #003049;
+	color: white;
+	border-radius: 15px;
+	height: 30px;
+	box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+	display: block;
+	margin: 0 auto;
+
+}
+button span{
+	padding: 0px 10px;
+}
+
+
+
+
+.in{
+	width: 100%;
+}
+
+
+input{
+	border-radius: 5px;
+}
+
+input:focus{
+	border: 1px solid #F77F00;
+}
+
+/*https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7*/
+
